@@ -1,0 +1,490 @@
+[
+  {
+    "question": "Ce spune teoria imigrationista?",
+    "options": {
+      "a": "românii sunt urmașii romanilor",
+      "b": "Ungurii au fost primii în Transilvania, poporul român e format doar din popoare migratoare"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Document al Scolii Ardelene prin care își cer drepturile",
+    "options": {
+      "a": "Supplex Libellus Valachorum",
+      "b": "Petiția Națională"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Teoria imigrationista a fost reluată în secolul XX",
+    "options": {
+      "a": "după Unirea cu Transilvania",
+      "b": "înainte de izbucnirea războiului"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Anul 1457 este în secolul",
+    "options": {
+      "a": "XIV",
+      "b": "XV"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Deceniul 8 al secolului XIX inseamna",
+    "options": {
+      "a": "1871 - 1880",
+      "b": "1881 - 1890"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Proiect politic din deceniul 5 al secolului XIX",
+    "options": {
+      "a": "Proclamația de la Islaz",
+      "b": "Adunările ad - hoc"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Statul medieval Moldova se află",
+    "options": {
+      "a": "La est de Carpați",
+      "b": "La sud de Carpați"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Autonomii locale din secolul IX",
+    "options": {
+      "a": "Voievodatul lui Gelu, Voievodatul lui Glad, Voievodatul lui Menumorut",
+      "b": "Transilvania"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Izvor istoric din secolul XIII",
+    "options": {
+      "a": "Diploma Cavalerilor Ioaniti",
+      "b": "Gesta Hungarorum"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Acțiune din secolul XIII care contribuie la formarea Țării Românești",
+    "options": {
+      "a": "Descălecatul lui Negru Vodă",
+      "b": "Bătălia de la Posada"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Constituirea Moldovei",
+    "options": {
+      "a": "Înființarea Mitropoliei de către Petru Musat",
+      "b": "Descălecatul lui Bogdan"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Evoluția unei instituții centrale în secolul XVI",
+    "options": {
+      "a": "trecerea Transilvaniei de la voievodat la principat",
+      "b": "instaurarea regimului fanariot"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Eveniment care duce la consolidarea Țării Românești",
+    "options": {
+      "a": "Bătălia de la Posada",
+      "b": "Înființarea Mitropoliei de la Argeș"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Instituția centrală a statelor extracarpatice în secolul XVI",
+    "options": {
+      "a": "domnia",
+      "b": "principatul"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Asemănare între autonomiile locale, indiferent de secol și spațiu",
+    "options": {
+      "a": "au conducători cu atribuții militare, judecătorești, administrative",
+      "b": "sunt menționate în izvoare istorice"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Eveniment asupra unei instituții centrale din secolul XVIII",
+    "options": {
+      "a": "instaurarea regimului fanariot",
+      "b": "eliminarea domniilor fanariote"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Acțiuni militare înseamnă",
+    "options": {
+      "a": "tratate și alianțe",
+      "b": "lupte și bătălii"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Acțiune diplomatică din a doua jumătate a secolului XIV",
+    "options": {
+      "a": "Tratatul de la Brașov",
+      "b": "Tratatul de la Suceava"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Acțiune militară în ultimul deceniu al secolului XIV",
+    "options": {
+      "a": "Cruciada de la Nicopole",
+      "b": "Bătălia de la Vaslui"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Acțiune diplomatică în a doua jumătate a secolului XV",
+    "options": {
+      "a": "Tratatul de la Iași",
+      "b": "Atacul de noapte"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Acțiune militară în prima jumătate a secolului XV",
+    "options": {
+      "a": "Asediul Belgradului",
+      "b": "Cruciada de la Varna"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Acțiune diplomatică din secolul XVI",
+    "options": {
+      "a": "Tratatul de la Alba Iulia",
+      "b": "Tratatul de la Overchelăuți"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Implicarea domnilor români în relațiile internaționale în secolul XVIII",
+    "options": {
+      "a": "Bătălia de la Stănilești / Tratatul de la Luțk",
+      "b": "Războiul de independență"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Asemănare între acțiunile diplomatice indiferent de secol",
+    "options": {
+      "a": "au caracter antiotoman",
+      "b": "Românii erau inferiori numeric"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Asemănare între acțiunile militare indiferent de secol",
+    "options": {
+      "a": "au caracter antiotoman",
+      "b": "Românii erau inferiori numeric"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Regimul fanariot e caracterizat prin",
+    "options": {
+      "a": "limitarea autonomiei Principatelor de către otomani",
+      "b": "libertate comercială"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "În proiectele politice din secolul XVIII cel mai mult se cere:",
+    "options": {
+      "a": "unirea",
+      "b": "eliminarea domniilor fanariote"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Proiect politic din prima jumătate a secolului XIX",
+    "options": {
+      "a": "Cererile norodului romanesc",
+      "b": "Memoriul de la Șiștov"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Asemănare între proiectele politice din perioada 1801 - 1848",
+    "options": {
+      "a": "cer eliminarea domniilor fanariote",
+      "b": "cer respectarea drepturilor și libertăților cetățenști"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Eveniment care duce la constituirea statului român modern",
+    "options": {
+      "a": "dubla alegere a lui Al. I. Cuza",
+      "b": "Adoptarea Constituției din 1866"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Consolidarea statului român modern la nivel intern:",
+    "options": {
+      "a": "reformele lui Cuza + Constituția",
+      "b": "Câștigarea independenței"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Consolidarea statului român modern la nivel internațional",
+    "options": {
+      "a": "reformele lui Cuza + Constituția",
+      "b": "Câștigarea independenței"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Statul român participă la relații internaționale în deceniul 8 al secolului XIX prin",
+    "options": {
+      "a": "Războiul ruso - turc care duce la independența 1877",
+      "b": "Semnarea tratatului cu Puterile Centrale 1883"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Acțiune diplomatică prin care România participă la relațiile internaționale în prima jumătate a secolului XX",
+    "options": {
+      "a": "Semnează convenția politico- militară cu Puterile Centrale",
+      "b": "semnează convenția politico- militară cu Antanta"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "În urma primului război mondial România este",
+    "options": {
+      "a": "învinsă",
+      "b": "învingătoare"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Asemănare între acțiunile internaționale din a doua jumătate a secolului XIX la care participă România",
+    "options": {
+      "a": "caracter antiotoman",
+      "b": "caracter antimaghiar"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "În 1918, la Alba Iulia se consfințește unirea României cu",
+    "options": {
+      "a": "Transilvania",
+      "b": "Bucovina"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Lege fundamentală înseamnă",
+    "options": {
+      "a": "Constituție",
+      "b": "proiect"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Constituțiile democratice ale României:",
+    "options": {
+      "a": "1923, 1952, 1965",
+      "b": "1866, 1923, 1991"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Constituția României din deceniul 4 al secolului XX",
+    "options": {
+      "a": "1938",
+      "b": "1948"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Practică politica democratică din ultimul deceniu al secolului XX",
+    "options": {
+      "a": "adoptarea Constituției din 1991",
+      "b": "se trece mai ușor granița"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Dacă constituția are caracter totalitar înseamnă ca",
+    "options": {
+      "a": "cetățenii sunt liberi, au drepturi, se respectă separarea puterilor în stat",
+      "b": "cetățenii sunt controlați, au drepturi limitate și nu se respectă separarea puterilor în stat"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Dacă constituția are caracter democratic înseamnă ca",
+    "options": {
+      "a": "cetățenii sunt liberi, au drepturi, se respectă separarea puterilor în stat",
+      "b": "cetățenii sunt controlați, au drepturi limitate și nu se respectă separarea puterilor în stat"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Democrația se caracterizează prin:",
+    "options": {
+      "a": "pluripartidism, separarea puterilor în stat, respectarea drepturilor și libertăților cetățenești",
+      "b": "monopartidism, nesepararea puterilor în stat, nerespectarea drepturilor și libertăților cetățenești"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Totalitarismul se caracterizează prin:",
+    "options": {
+      "a": "pluripartidism, separarea puterilor în stat, respectarea drepturilor și libertăților cetățenești",
+      "b": "monopartidism, nesepararea puterilor în stat, nerespectarea drepturilor și libertăților cetățenești"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Ideologiile totalitare:",
+    "options": {
+      "a": "liberalism, țărănism",
+      "b": "nazism, fascism, comunism"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Fascismul se caracterizează prin:",
+    "options": {
+      "a": "crearea de corporații",
+      "b": "antisemitism"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Nazismul se caracterizează prin:",
+    "options": {
+      "a": "antisemitism",
+      "b": "dictatura proletara"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "In ultimul deceniu al secolului XX",
+    "options": {
+      "a": "se respectă drepturile și libertățile cetățenești",
+      "b": "nu se respectă drepturile și libertățile cetățenești"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Evenimente care duc la instaurarea comunismului romanesc:",
+    "options": {
+      "a": "aderarea la CAER, falsificarea alegerilor",
+      "b": "falsificarea alegerilor, abdicarea regelui Mihai, transformarea României în Republică Populară"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Practici totalitare din vremea stalinista:",
+    "options": {
+      "a": "Naționalizare, Colectivizare, Constituțiile din ‘48, ‘52",
+      "b": "Poliția politică, pluripartidism, drepturi și libertăți"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Practici politice din vremea național - comunismului:",
+    "options": {
+      "a": "Constituția din 1965, cultul personalității, propaganda, separarea puterilor în stat",
+      "b": "monopartidism, cultul personalității, cenzura, Constituția din 1965"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "România participă la relațiile internaționale în timpul Razboiului Rece:",
+    "options": {
+      "a": "da",
+      "b": "nu"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "România participă la Războiul rece în perioada stalinista:",
+    "options": {
+      "a": "adera la CAER, semnează Tratatul de la Varșovia",
+      "b": "nu participă la Primăvara de la Praga"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "România participă la Războiul rece în perioada național - comunismului:",
+    "options": {
+      "a": "reia relațiile cu Occidentul și participă la Conferința de la Helsinki",
+      "b": "adera la CAER"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Perioada postdecembrista a Romaniei:",
+    "options": {
+      "a": "se revine la democrație prin Constituția din 1991",
+      "b": "se adoptă Constituția din 1923"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Formațiune politică înseamnă",
+    "options": {
+      "a": "grupare cu interese comune",
+      "b": "partid"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "“regăsite atât în sursa A, cât și în sursa B” înseamnă:",
+    "options": {
+      "a": "ceva comun",
+      "b": "diferite"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "“regăsite în sursa A, respectiv sursa B” înseamnă:",
+    "options": {
+      "a": "aceleași două chestii",
+      "b": "diferite. unul din A, unul din B"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Conectori de cauză:",
+    "options": {
+      "a": "pentru ca, deoarece, întrucât, din cauză ca, fiindcă",
+      "b": "Astfel, deci, de aceea, prin urmare, ca urmare, în consecință"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Conectori de efect :",
+    "options": {
+      "a": "pentru ca, deoarece, întrucât, din cauză ca, fiindcă",
+      "b": "Astfel, deci, de aceea, prin urmare, ca urmare, în consecință"
+    },
+    "correctAnswer": "b"
+  }
+]
