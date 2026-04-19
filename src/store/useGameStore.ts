@@ -15,6 +15,7 @@ interface GameState {
   currentQuestionIndex: number;
   currentQuestion: Question | null;
   questions: Question[];
+  lastAnswer: 'a' | 'b' | null;
   setStatus: (status: GameState['status']) => void;
   setGameLength: (length: number) => void;
   startGame: () => void;
@@ -31,6 +32,7 @@ export const useGameStore = create<GameState>((set, get) => ({
   currentQuestionIndex: 0,
   currentQuestion: null,
   questions: [],
+  lastAnswer: null,
 
   setStatus: (status) => set({ status }),
   setGameLength: (length) => set({ gameLength: length }),
@@ -48,7 +50,8 @@ export const useGameStore = create<GameState>((set, get) => ({
       score: 0,
       questions: selected,
       currentQuestionIndex: 0,
-      currentQuestion: selected[0]
+      currentQuestion: selected[0],
+      lastAnswer: null
     });
   },
 
@@ -61,10 +64,11 @@ export const useGameStore = create<GameState>((set, get) => ({
       set({ 
         status: 'success', 
         score: newScore,
-        highScore: Math.max(newScore, highScore)
+        highScore: Math.max(newScore, highScore),
+        lastAnswer: answer
       });
     } else {
-      set({ status: 'crashed', score: 0 });
+      set({ status: 'crashed', score: 0, lastAnswer: answer });
     }
   },
 
@@ -79,11 +83,11 @@ export const useGameStore = create<GameState>((set, get) => ({
       });
     } else {
       // Finished all questions for this session
-      set({ status: 'menu' }); 
+      set({ status: 'menu', lastAnswer: null }); 
     }
   },
 
   resetGame: () => {
-    set({ status: 'menu', score: 0 });
+    set({ status: 'menu', score: 0, lastAnswer: null });
   }
 }));

@@ -112,8 +112,11 @@ export function UI() {
         )}
 
         {status === 'crashed' && (
-          <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 text-6xl font-black text-red-500 drop-shadow-[0_0_30px_rgba(239,68,68,1)] animate-bounce pointer-events-none">
-            CRASHED!
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center bg-black/80 backdrop-blur-md p-8 rounded-3xl border-4 border-red-500 shadow-[0_0_50px_rgba(239,68,68,0.8)] z-50 animate-bounce pointer-events-none w-11/12 max-w-md">
+            <img src="../assets/cuza.jpg" alt="Alexandru Ioan Cuza" className="w-48 h-48 object-cover rounded-full mb-6 border-4 border-white shadow-[0_0_20px_rgba(255,255,255,0.5)]" />
+            <div className="text-4xl sm:text-5xl font-black text-red-500 drop-shadow-[0_0_20px_rgba(239,68,68,1)] text-center leading-tight">
+              Ai greșit!
+            </div>
           </div>
         )}
       </div>
