@@ -134,8 +134,8 @@ export function UI() {
           </div>
         )}
 
-        {(status === 'playing' || status === 'success') && currentQuestion && (
-          <div className="w-full max-w-md absolute bottom-24 left-1/2 -translate-x-1/2 px-4 pointer-events-none">
+        {status === 'playing' && currentQuestion && (
+          <div className="w-full max-w-md absolute bottom-24 left-1/2 -translate-x-1/2 px-4 pointer-events-none animate-in fade-in slide-in-from-bottom-10 duration-500">
             <div className="bg-black/80 backdrop-blur-xl border border-white/20 p-6 rounded-3xl mb-6 shadow-2xl">
               <h2 className="text-xl sm:text-2xl font-bold text-white text-center leading-snug">
                 {currentQuestion.question}
