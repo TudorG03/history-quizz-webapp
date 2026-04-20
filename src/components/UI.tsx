@@ -10,7 +10,7 @@ export function cn(...inputs: ClassValue[]) {
 
 export function UI() {
   const { 
-    status, score, highScore, gameLength, currentQuestion, currentQuestionIndex,
+    status, score, highScore, gameLength, currentQuestion,
     totalCorrect, totalAttempted,
     startGame, setGameLength, answerQuestion, nextQuestion, resetGame
   } = useGameStore()
