@@ -14,32 +14,57 @@ mammoth.extractRawText({ path: docxPath })
     const text = result.value;
     const questions = [];
     
-    const questionRegex = /\d+\.\s*(.*?)\s*\n+a\.\s*(.*?)\s*\n+b\.\s*(.*?)\s*(?=\n+\d+\.|\n+Level|\n*$)/gs;
+    // Split by level or just process line by line to find questions
+    // Better approach: find all patterns that look like "1. Question text" followed by "a." and "b."
     
-    let match;
-    while ((match = questionRegex.exec(text)) !== null) {
-      const qText = match[1].trim();
-      let optA = match[2].trim();
-      let optB = match[3].trim();
+    // Normalize line endings and spacing
+    const lines = text.split('\n').map(l => l.trim()).filter(l => l.length > 0);
+    
+    let currentQuestion = null;
+    
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i];
       
-      let correct = null;
-      if (optA.includes('( C )') || optA.includes('(C)')) {
-        correct = 'a';
-        optA = optA.replace(/\(\s*C\s*\)/i, '').trim();
-      } else if (optB.includes('( C )') || optB.includes('(C)')) {
-        correct = 'b';
-        optB = optB.replace(/\(\s*C\s*\)/i, '').trim();
+      // Matches "1. Question" but not "a. Option"
+      const questionMatch = line.match(/^\d+\.\s+(.+)$/);
+      if (questionMatch) {
+        if (currentQuestion) {
+          // If we find a new question before finishing the previous one, skip it or handle it
+          // But usually we expect a, b after a question.
+        }
+        currentQuestion = {
+          question: questionMatch[1].trim(),
+          options: {},
+          correctAnswer: null
+        };
+        continue;
       }
       
-      if (qText && optA && optB && correct) {
-        questions.push({
-          question: qText,
-          options: {
-            a: optA,
-            b: optB
-          },
-          correctAnswer: correct
-        });
+      if (currentQuestion) {
+        const optAMatch = line.match(/^a\.\s+(.+)$/i);
+        const optBMatch = line.match(/^b\.\s+(.+)$/i);
+        
+        if (optAMatch) {
+          let text = optAMatch[1].trim();
+          if (text.includes('( C )') || text.includes('(C)')) {
+            currentQuestion.correctAnswer = 'a';
+            text = text.replace(/\(\s*C\s*\)/gi, '').trim();
+          }
+          currentQuestion.options.a = text;
+        } else if (optBMatch) {
+          let text = optBMatch[1].trim();
+          if (text.includes('( C )') || text.includes('(C)')) {
+            currentQuestion.correctAnswer = 'b';
+            text = text.replace(/\(\s*C\s*\)/gi, '').trim();
+          }
+          currentQuestion.options.b = text;
+          
+          // Once we have B, we usually have a full question
+          if (currentQuestion.question && currentQuestion.options.a && currentQuestion.options.b && currentQuestion.correctAnswer) {
+            questions.push(currentQuestion);
+            currentQuestion = null;
+          }
+        }
       }
     }
     
