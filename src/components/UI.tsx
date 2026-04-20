@@ -10,8 +10,9 @@ export function cn(...inputs: ClassValue[]) {
 
 export function UI() {
   const { 
-    status, score, highScore, gameLength, currentQuestion,
-    startGame, setGameLength, answerQuestion, nextQuestion
+    status, score, highScore, gameLength, currentQuestion, currentQuestionIndex,
+    totalCorrect, totalAttempted,
+    startGame, setGameLength, answerQuestion, nextQuestion, resetGame
   } = useGameStore()
 
   useEffect(() => {
@@ -22,6 +23,8 @@ export function UI() {
       return () => clearTimeout(timer)
     }
   }, [status, nextQuestion])
+
+  const finalAccuracy = Math.round((totalCorrect / totalAttempted) * 100) || 0;
 
   const bind = useDrag(({ swipe: [swipeX] }) => {
     if (status !== 'playing') return
@@ -45,10 +48,10 @@ export function UI() {
       {/* HUD */}
       <div className="flex justify-between p-6 w-full">
         <div className="text-xl font-bold bg-black/50 px-4 py-2 rounded-xl backdrop-blur-md text-white border border-white/10">
-          Score: {score}
+          Current Score: {score}
         </div>
         <div className="text-xl font-bold bg-black/50 px-4 py-2 rounded-xl backdrop-blur-md text-white border border-white/10">
-          High: {highScore}
+          Highscore: {highScore}
         </div>
       </div>
 
@@ -82,6 +85,52 @@ export function UI() {
             >
               START DRIVING
             </button>
+          </div>
+        )}
+
+        {status === 'finished' && (
+          <div className="pointer-events-auto bg-black/90 backdrop-blur-2xl p-12 rounded-[3rem] border-2 border-yellow-500/50 flex flex-col items-center text-center max-w-xl w-full shadow-[0_0_80px_rgba(234,179,8,0.3)] animate-in fade-in zoom-in duration-500 relative overflow-hidden">
+            <h1 className="text-6xl font-black mb-6 text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-orange-400 to-yellow-600 drop-shadow-[0_0_20px_rgba(234,179,8,0.6)]">Felicitari!</h1>
+            
+            {/* Realistic Foreground Assets */}
+            <div className="flex gap-4 w-full mb-8 relative z-10 px-2">
+              <div className="flex-1 group">
+                <img 
+                  src="/assets/yacht.avif" 
+                  alt="Luxury Yacht"
+                  className="w-full h-40 object-cover rounded-2xl border-2 border-white/20 shadow-2xl group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="mt-2 text-[10px] font-black text-yellow-500 uppercase tracking-widest">Luxury Yacht Unlocked</div>
+              </div>
+              <div className="flex-1 group">
+                <img 
+                  src="/assets/private-jet.jpg" 
+                  alt="Private Jet"
+                  className="w-full h-40 object-cover rounded-2xl border-2 border-pink-500/40 shadow-2xl group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="mt-2 text-[10px] font-black text-pink-500 uppercase tracking-widest">Private Jet Unlocked</div>
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-2 gap-6 w-full mb-10 relative z-10">
+              <div className="bg-white/10 p-6 rounded-3xl border border-white/20 backdrop-blur-md shadow-inner">
+                <div className="text-slate-400 text-sm font-bold uppercase tracking-[0.2em] mb-2">Correct Answers</div>
+                <div className="text-5xl font-black text-white">{totalCorrect} / {totalAttempted}</div>
+              </div>
+              <div className="bg-white/10 p-6 rounded-3xl border border-white/20 backdrop-blur-md shadow-inner">
+                <div className="text-slate-400 text-sm font-bold uppercase tracking-[0.2em] mb-2">Accuracy</div>
+                <div className="text-5xl font-black text-white">{finalAccuracy}%</div>
+              </div>
+            </div>
+
+            <div className="w-full relative z-10">
+              <button 
+                onClick={resetGame}
+                className="w-full bg-gradient-to-r from-yellow-400 to-orange-600 text-white font-black text-2xl py-6 rounded-2xl hover:scale-[1.02] active:scale-[0.98] transition-all shadow-[0_15px_50px_rgba(234,179,8,0.5)] cursor-pointer"
+              >
+                PLAY AGAIN
+              </button>
+            </div>
           </div>
         )}
 

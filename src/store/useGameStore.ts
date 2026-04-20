@@ -8,9 +8,11 @@ interface Question {
 }
 
 interface GameState {
-  status: 'menu' | 'playing' | 'crashed' | 'success';
+  status: 'menu' | 'playing' | 'crashed' | 'success' | 'finished';
   score: number;
   highScore: number;
+  totalCorrect: number;
+  totalAttempted: number;
   gameLength: number;
   currentQuestionIndex: number;
   currentQuestion: Question | null;
@@ -28,6 +30,8 @@ export const useGameStore = create<GameState>((set, get) => ({
   status: 'menu',
   score: 0,
   highScore: 0,
+  totalCorrect: 0,
+  totalAttempted: 0,
   gameLength: 10,
   currentQuestionIndex: 0,
   currentQuestion: null,
@@ -48,6 +52,8 @@ export const useGameStore = create<GameState>((set, get) => ({
     set({
       status: 'playing',
       score: 0,
+      totalCorrect: 0,
+      totalAttempted: 0,
       questions: selected,
       currentQuestionIndex: 0,
       currentQuestion: selected[0],
@@ -56,7 +62,7 @@ export const useGameStore = create<GameState>((set, get) => ({
   },
 
   answerQuestion: (answer) => {
-    const { currentQuestion, score, highScore, status } = get();
+    const { currentQuestion, score, highScore, status, totalCorrect, totalAttempted } = get();
     if (!currentQuestion || status !== 'playing') return;
 
     if (currentQuestion.correctAnswer === answer) {
@@ -64,17 +70,26 @@ export const useGameStore = create<GameState>((set, get) => ({
       set({ 
         status: 'success', 
         score: newScore,
+        totalCorrect: totalCorrect + 1,
+        totalAttempted: totalAttempted + 1,
         highScore: Math.max(newScore, highScore),
         lastAnswer: answer
       });
     } else {
-      set({ status: 'crashed', score: 0, lastAnswer: answer });
+      // Reset score but keep playing
+      set({ 
+        status: 'crashed', 
+        score: 0, 
+        totalAttempted: totalAttempted + 1,
+        lastAnswer: answer 
+      });
     }
   },
 
   nextQuestion: () => {
     const { currentQuestionIndex, questions } = get();
     const nextIndex = currentQuestionIndex + 1;
+    
     if (nextIndex < questions.length) {
       set({
         status: 'playing',
@@ -83,11 +98,11 @@ export const useGameStore = create<GameState>((set, get) => ({
       });
     } else {
       // Finished all questions for this session
-      set({ status: 'menu', lastAnswer: null }); 
+      set({ status: 'finished', lastAnswer: null }); 
     }
   },
 
   resetGame: () => {
-    set({ status: 'menu', score: 0, lastAnswer: null });
+    set({ status: 'menu', score: 0, totalCorrect: 0, totalAttempted: 0, lastAnswer: null });
   }
 }));

@@ -19,3 +19,8 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.clip-path-yacht {
+  clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 15% 100%);
+}
+
