@@ -109,73 +109,73 @@ export function UI() {
         )}
 
         {status === "finished" && (
-          <div className="pointer-events-auto bg-black/90 backdrop-blur-2xl p-12 rounded-[3rem] border-2 border-yellow-500/50 flex flex-col items-center text-center max-w-xl w-full shadow-[0_0_80px_rgba(234,179,8,0.3)] animate-in fade-in zoom-in duration-500 relative overflow-hidden">
-            <h1 className="text-6xl font-black mb-6 text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-orange-400 to-yellow-600 drop-shadow-[0_0_20px_rgba(234,179,8,0.6)]">
+          <div className="pointer-events-auto bg-black/90 backdrop-blur-2xl p-6 sm:p-12 rounded-[2.5rem] sm:rounded-[3rem] border-2 border-yellow-500/50 flex flex-col items-center text-center max-w-xl w-full max-h-[90vh] overflow-y-auto shadow-[0_0_80px_rgba(234,179,8,0.3)] animate-in fade-in zoom-in duration-500 relative">
+            <h1 className="text-4xl sm:text-6xl font-black mb-4 sm:mb-6 text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-orange-400 to-yellow-600 drop-shadow-[0_0_20px_rgba(234,179,8,0.6)]">
               Felicitari!
             </h1>
 
             {/* Conditional Foreground Assets */}
             {finalAccuracy >= 90 ? (
-              <div className="flex gap-4 w-full mb-8 relative z-10 px-2">
+              <div className="flex gap-3 sm:gap-4 w-full mb-6 sm:mb-8 relative z-10 px-2">
                 <div className="flex-1 group">
                   <img
                     src="/assets/yacht.avif"
                     alt="Luxury Yacht"
-                    className="w-full h-40 object-cover rounded-2xl border-2 border-white/20 shadow-2xl group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-24 sm:h-40 object-cover rounded-2xl border-2 border-white/20 shadow-2xl group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="mt-2 text-[10px] font-black text-yellow-500 uppercase tracking-widest">
-                    Luxury Yacht Unlocked
+                  <div className="mt-2 text-[8px] sm:text-[10px] font-black text-yellow-500 uppercase tracking-widest">
+                    Yacht Unlocked
                   </div>
                 </div>
                 <div className="flex-1 group">
                   <img
                     src="/assets/private-jet.jpg"
                     alt="Private Jet"
-                    className="w-full h-40 object-cover rounded-2xl border-2 border-pink-500/40 shadow-2xl group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-24 sm:h-40 object-cover rounded-2xl border-2 border-pink-500/40 shadow-2xl group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="mt-2 text-[10px] font-black text-pink-500 uppercase tracking-widest">
-                    Private Jet Unlocked
+                  <div className="mt-2 text-[8px] sm:text-[10px] font-black text-pink-500 uppercase tracking-widest">
+                    Jet Unlocked
                   </div>
                 </div>
               </div>
             ) : (
-              <div className="w-full mb-8 relative z-10 px-2 flex flex-col items-center">
-                <div className="relative w-full max-w-xs overflow-hidden rounded-2xl border-2 border-red-500/50 shadow-2xl">
+              <div className="w-full mb-6 sm:mb-8 relative z-10 px-2 flex flex-col items-center">
+                <div className="relative w-full max-w-[180px] sm:max-w-xs overflow-hidden rounded-2xl border-2 border-red-500/50 shadow-2xl">
                   <img
                     src="/assets/cuza-wrong.jpeg"
                     alt="Mai citeste pdf-ul"
                     className="w-full h-auto block"
                   />
                 </div>
-                <div className="mt-2 text-[10px] font-black text-red-500 uppercase tracking-widest italic">
-                  Niciun premiu momentan... Mai învață!
+                <div className="mt-2 text-[8px] sm:text-[10px] font-black text-red-500 uppercase tracking-widest italic">
+                  Mai învață pentru premii!
                 </div>
               </div>
             )}
 
-            <div className="grid grid-cols-2 gap-6 w-full mb-10 relative z-10">
-              <div className="bg-white/10 p-6 rounded-3xl border border-white/20 backdrop-blur-md shadow-inner">
-                <div className="text-slate-400 text-sm font-bold uppercase tracking-[0.2em] mb-2">
-                  Correct Answers
+            <div className="grid grid-cols-2 gap-4 sm:gap-6 w-full mb-8 sm:mb-10 relative z-10">
+              <div className="bg-white/10 p-3 sm:p-6 rounded-2xl sm:rounded-3xl border border-white/20 backdrop-blur-md shadow-inner">
+                <div className="text-slate-400 text-[10px] sm:text-sm font-bold uppercase tracking-wider sm:tracking-[0.2em] mb-1">
+                  Correct
                 </div>
-                <div className="text-5xl font-black text-white">
-                  {totalCorrect} / {totalAttempted}
+                <div className="text-2xl sm:text-5xl font-black text-white">
+                  {totalCorrect}/{totalAttempted}
                 </div>
               </div>
-              <div className="bg-white/10 p-6 rounded-3xl border border-white/20 backdrop-blur-md shadow-inner">
-                <div className="text-slate-400 text-sm font-bold uppercase tracking-[0.2em] mb-2">
+              <div className="bg-white/10 p-3 sm:p-6 rounded-2xl sm:rounded-3xl border border-white/20 backdrop-blur-md shadow-inner">
+                <div className="text-slate-400 text-[10px] sm:text-sm font-bold uppercase tracking-wider sm:tracking-[0.2em] mb-1">
                   Accuracy
                 </div>
-                <div className="text-5xl font-black text-white">
+                <div className="text-2xl sm:text-5xl font-black text-white">
                   {finalAccuracy}%
                 </div>
               </div>
             </div>
 
-            <div className="w-full relative z-10">
+            <div className="w-full relative z-10 mt-auto">
               <button
                 onClick={resetGame}
-                className="w-full bg-gradient-to-r from-yellow-400 to-orange-600 text-white font-black text-2xl py-6 rounded-2xl hover:scale-[1.02] active:scale-[0.98] transition-all shadow-[0_15px_50px_rgba(234,179,8,0.5)] cursor-pointer"
+                className="w-full bg-gradient-to-r from-yellow-400 to-orange-600 text-white font-black text-xl sm:text-2xl py-4 sm:py-6 rounded-xl sm:rounded-2xl hover:scale-[1.02] active:scale-[0.98] transition-all shadow-[0_15px_50px_rgba(234,179,8,0.5)] cursor-pointer"
               >
                 PLAY AGAIN
               </button>
