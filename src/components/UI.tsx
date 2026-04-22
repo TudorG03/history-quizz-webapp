@@ -114,29 +114,44 @@ export function UI() {
               Felicitari!
             </h1>
 
-            {/* Realistic Foreground Assets */}
-            <div className="flex gap-4 w-full mb-8 relative z-10 px-2">
-              <div className="flex-1 group">
-                <img
-                  src="/assets/yacht.avif"
-                  alt="Luxury Yacht"
-                  className="w-full h-40 object-cover rounded-2xl border-2 border-white/20 shadow-2xl group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="mt-2 text-[10px] font-black text-yellow-500 uppercase tracking-widest">
-                  Luxury Yacht Unlocked
+            {/* Conditional Foreground Assets */}
+            {finalAccuracy >= 90 ? (
+              <div className="flex gap-4 w-full mb-8 relative z-10 px-2">
+                <div className="flex-1 group">
+                  <img
+                    src="/assets/yacht.avif"
+                    alt="Luxury Yacht"
+                    className="w-full h-40 object-cover rounded-2xl border-2 border-white/20 shadow-2xl group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="mt-2 text-[10px] font-black text-yellow-500 uppercase tracking-widest">
+                    Luxury Yacht Unlocked
+                  </div>
+                </div>
+                <div className="flex-1 group">
+                  <img
+                    src="/assets/private-jet.jpg"
+                    alt="Private Jet"
+                    className="w-full h-40 object-cover rounded-2xl border-2 border-pink-500/40 shadow-2xl group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="mt-2 text-[10px] font-black text-pink-500 uppercase tracking-widest">
+                    Private Jet Unlocked
+                  </div>
                 </div>
               </div>
-              <div className="flex-1 group">
-                <img
-                  src="/assets/private-jet.jpg"
-                  alt="Private Jet"
-                  className="w-full h-40 object-cover rounded-2xl border-2 border-pink-500/40 shadow-2xl group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="mt-2 text-[10px] font-black text-pink-500 uppercase tracking-widest">
-                  Private Jet Unlocked
+            ) : (
+              <div className="w-full mb-8 relative z-10 px-2 flex flex-col items-center">
+                <div className="relative w-full max-w-xs overflow-hidden rounded-2xl border-2 border-red-500/50 shadow-2xl">
+                  <img
+                    src="/assets/cuza-wrong.jpeg"
+                    alt="Mai citeste pdf-ul"
+                    className="w-full h-auto block"
+                  />
+                </div>
+                <div className="mt-2 text-[10px] font-black text-red-500 uppercase tracking-widest italic">
+                  Niciun premiu momentan... Mai învață!
                 </div>
               </div>
-            </div>
+            )}
 
             <div className="grid grid-cols-2 gap-6 w-full mb-10 relative z-10">
               <div className="bg-white/10 p-6 rounded-3xl border border-white/20 backdrop-blur-md shadow-inner">
