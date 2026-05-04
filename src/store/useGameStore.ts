@@ -45,7 +45,20 @@ export const useGameStore = create<GameState>((set, get) => ({
     // Shuffle and pick
     const allQuestions = [...questionsData] as Question[];
     const shuffled = allQuestions.sort(() => 0.5 - Math.random());
-    const selected = shuffled.slice(0, get().gameLength);
+    const selected = shuffled.slice(0, get().gameLength).map(q => {
+      // Randomly swap options a and b
+      if (Math.random() > 0.5) {
+        return {
+          ...q,
+          options: {
+            a: q.options.b,
+            b: q.options.a
+          },
+          correctAnswer: q.correctAnswer === 'a' ? 'b' : 'a'
+        };
+      }
+      return q;
+    });
     
     if (selected.length === 0) return;
 
