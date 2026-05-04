@@ -55,9 +55,9 @@ export const useGameStore = create<GameState>((set, get) => ({
             b: q.options.a
           },
           correctAnswer: q.correctAnswer === 'a' ? 'b' : 'a'
-        };
+        } as Question;
       }
-      return q;
+      return q as Question;
     });
     
     if (selected.length === 0) return;
