@@ -1,5 +1,205 @@
 [
   {
+    "question": "Prezentați alte două practici politice totalitare utilizate în statul român",
+    "options": {
+      "a": "Constituția din 1948, 1952, 1965, naționalizarea",
+      "b": "colectivizarea agriculturii și pluripartitism"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Argumentați printr un fapt istoric relevant afirmația conform căreia în secolul al XVI-lea au avut loc acțiuni politice care au vizat o instituție centrală din Transilvania sau din Țara Românească",
+    "options": {
+      "a": "regimul fanariot",
+      "b": "instaurarea principatului"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Fapt istoric desfășurate în Transilvania în anul 1918 pentru realizarea României Mari",
+    "options": {
+      "a": "adunarea de la Alba Iulia",
+      "b": "adunarea de la Cernăuți"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Prezentați două fapte istorice desfășurate în statul român în perioada 1948-1958",
+    "options": {
+      "a": "constituțiile din 1948-1952, organizarea poliției politice",
+      "b": "falsificarea alegerilor și cultul personalității"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "numiți o acțiune desfășurată de români în perioada 1857-1859",
+    "options": {
+      "a": "adunările ad hoc și dubla alegere",
+      "b": "Constituția din 1866 și abdicarea lui Alexandru Ioan Cuza"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Menționați două fapte istorice la care participă România în cadrul relațiilor internaționale din perioada 1875-1895",
+    "options": {
+      "a": "participarea la Războiul de Independență și semnarea tratatului cu puterile centrale",
+      "b": "Primul Război Mondial"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Menționați acțiuni militare la care participă românii în secolele XV-XVI",
+    "options": {
+      "a": "bătălia de la Vaslui și bătălia de la Călugăreni",
+      "b": "tratatul de la Overchelauti și aderarea la Liga Sfântă"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Precizați un proiect politic referitor la statul român modern elaborat în spațiul românesc în perioada 1821-1848",
+    "options": {
+      "a": "constituția cărvunarilor și proclamația de la Islaz",
+      "b": "adunările ad hoc și dubla alegere"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Menționați două aspecte referitoare la Constituția din 1866",
+    "options": {
+      "a": "avea caracter democratic și votul era cenzitar",
+      "b": "avea caracter democratic, iar votul era universal"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Prezentați două acțiuni la care participa România în perioada războiului rece",
+    "options": {
+      "a": "aderarea la CAER și participarea la conferința de la Helsinki",
+      "b": "naționalizarea și cultul personalității"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Asemănare între practici politice utilizate în perioada național-comunismului",
+    "options": {
+      "a": "au caracter totalitar",
+      "b": "au caracter democratic"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Argumentați printr-un fapt istoric relevant afirmația conform căreia reprezentanții unei instituții centrale din spațiul românesc extracarpatic participă la acțiuni diplomatice în secolul al XV-lea",
+    "options": {
+      "a": "tratatul de la Iași",
+      "b": "asediul Belgradului"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "O asemănare între două fapte istorice desfășurate de români în cadrul crizei orientale din a doua jumătate a secolului al XIX-lea",
+    "options": {
+      "a": "caracter antiotoman",
+      "b": "caracter antimaghiar"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Argumentați printr-un fapt istoric relevant afirmația conform căreia românii se implicărea la acțiuni internaționale din perioada 1350-1450",
+    "options": {
+      "a": "lupta de la Codrii Cosminului",
+      "b": "cruciada de la Nicopole"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Menționați o asemănare între două practici politice utilizate în primele patru decenii ale secolului al XX-lea în statul român",
+    "options": {
+      "a": "au caracter democratic",
+      "b": "au caracter totalitar"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Argumentați printr-un fapt istoric relevant afirmația conform căreia statul român se consolidează prin măsuri adoptate în perioada 1862-1870",
+    "options": {
+      "a": "reforma învățământului",
+      "b": "abdicarea lui Alexandru Ioan Cuza"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Precizați o instituție centrală din spațiul românesc în secolul al XV-lea",
+    "options": {
+      "a": "domnia",
+      "b": "principatul"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Prezentați un fapt istoric care a contribuit la constituirea Țării Românești desfășurat în deceniile 3-6 ale secolului XIV",
+    "options": {
+      "a": "bătălia de la Posada",
+      "b": "descălecatul lui Bogdan"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Menționați o acțiune desfășurată în spațiul românesc extracarpatic în a doua jumătate a secolului al XIV-lea",
+    "options": {
+      "a": "bătălia de la Posada",
+      "b": "descălecatul lui Bogdan"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Menționați fapte istorice din România postbelică, în prima jumătate a secolului al XX-lea, și precizați o asemănare",
+    "options": {
+      "a": "falsificarea alegerilor și Constituția din 1948, asemănarea că contribuie la instaurarea regimului comunist",
+      "b": "Constituția din 1938"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Menționați o caracteristică a democrației din România în ultimul deceniu al secolului al XX-lea",
+    "options": {
+      "a": "se respectă drepturile și libertățile cetățenești",
+      "b": "nu se respectă drepturile și libertățile cetățenești"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Argumentați printr-un fapt istoric relevant afirmația conform căreia statul român evoluează în primele două decade ale secolului al XX-lea în direcția îndeplinirii obiectivelor naționale",
+    "options": {
+      "a": "Constituția din 1923",
+      "b": "unirea cu Transilvania, Bucovina, Basarabia"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Precizați o autonomie locală atestată în spațiul românesc în secolele IX-XI",
+    "options": {
+      "a": "voievodatul lui Gelu și voievodatul lui Glad",
+      "b": "cnezatul lui Ioan și cnezatul lui Farcaș"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Caracteristici ale autonomiilor locale",
+    "options": {
+      "a": "aveau amenințate de expansiunea maghiară și aveau conducători cu atribuții militare, judiciare și administrative",
+      "b": "aveau caracter antiotoman și erau conduse de domni"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Două instituții centrale în spațiul românesc în secolele XIII-XIV",
+    "options": {
+      "a": "domnia și biserica",
+      "b": "principatul și voievodatul"
+    },
+    "correctAnswer": "a"
+  },
+  {
     "question": "Ce spune teoria imigrationista?",
     "options": {
       "a": "românii sunt urmașii romanilor",
